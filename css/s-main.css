@@ -7,11 +7,16 @@ see here for full details: https://opensource.org/licenses/MIT
 
 body{
 	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
+	font-weight: 400;
 }
 p{
 	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
 }
 
 .s-container{
@@ -48,4 +53,8 @@ p{
 }
 .s-col-6{
 	width: 16.666666667%;
+}
+
+.s-center{
+	text-align: center
 }
