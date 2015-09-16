@@ -1,0 +1,51 @@
+/*
+Author: Keegan Shudy
+This body of work is to be governed under the MIT license
+see here for full details: https://opensource.org/licenses/MIT
+*/
+
+
+.body{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+}
+.p{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+}
+
+.s-container{
+	width : 100%;
+	max-width : 1920px
+}
+
+.s-row:before, 
+.s-row:after {
+	content:"";
+	display: table ;
+	clear:both;
+}
+
+.s-col-1, .s-col-2, .s-col-3, .s-col-4, .s-col-5,
+.s-col-6{
+	float: left;
+	min-height:1px;  	
+}
+.s-col-1{
+	width:100%;
+}
+.s-col-2{
+	width:50%;
+}
+.s-col-3{
+	width:33.3333333333%;
+}
+.s-col-4{
+	width: 25%;
+}
+.s-col-5{
+	width : 20%;
+}
+.s-col-6{
+	width: 16.666666667%;
+}
