@@ -54,7 +54,20 @@ h1, h2, h3, h4{
 .s-col-6{
 	width: 16.666666667%;
 }
+.s-text-right{
+	text-align: right;
+}
+.s-text-center{
+	text-align: center;
+}
 
-.s-center{
-	text-align: center
+.s-text-left{
+	text-align: left;
+}
+.s-button-primary{
+	border: 1px solid;
+	float: left;
+	background-color: #448AFF;
+	color: white;
+	height: 30px;	
 }
