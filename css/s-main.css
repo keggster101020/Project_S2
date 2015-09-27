@@ -65,20 +65,84 @@ h1, h2, h3, h4{
 	text-align: left;
 }
 .s-button-primary{
-	border: 1px;
+	border: 1px #448AFF;
+	outline: none;
 	background-color: #448AFF;
 	color: white;
 	height: 30px;
-	/*box-shadow: 1px 1px 5px rgba(0,0,0,0.6);*/
 	cursor: pointer;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
+                 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 	-webkit-transition: background-color .2s ease-in; 
 	transition: background-color .2s ease-in;
 }
 .s-button-primary:hover{
-	background-color: #1E88E5
+	background-color: #1E88E5;
 }
 .s-button-primary:active{
-	background-color: #1976D2
+	background-color: #1976D2;
+}
+
+.s-button-success{
+	border: 1px;
+	outline: none;
+	background-color: #8BC34A;
+	color: white;
+	height: 30px;
+	cursor: pointer;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
+                 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+	-webkit-transition: background-color .2s ease-in; 
+	transition: background-color .2s ease-in;
+}
+.s-button-success:hover{
+	background-color: #7CB342;
+}
+.s-button-success:active{
+	background-color: #689F38;
+}
+
+.s-button-danger{
+	border: 1px;
+	outline: none;
+	background-color: #F44336;
+	color: white;
+	height: 30px;
+	cursor: pointer;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
+                 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+	-webkit-transition: background-color .2s ease-in; 
+	transition: background-color .2s ease-in;
+}
+.s-button-danger:hover{
+	background-color: #E53935;
+}
+.s-button-danger:active{
+	background-color: #D32F2F;
+}
+
+.s-button-warning{
+	border: 1px;
+	outline: none;
+	background-color: #FFEB3B;
+	color: black;
+	opacity: .87;
+	height: 30px;
+	cursor: pointer;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
+                 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+	-webkit-transition: background-color .2s ease-in; 
+	transition: background-color .2s ease-in;
+}
+.s-button-warning:hover{
+	background-color: #FDD835;
+}
+.s-button-warning:active{
+	background-color: #FBC02D;
 }
 
 .s-drop-shadow-1{
