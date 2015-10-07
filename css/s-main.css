@@ -6,17 +6,22 @@ see here for full details: https://opensource.org/licenses/MIT
 
 
 body{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-weight: 400;
 }
 p{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-weight: 400;
 }
 
 h1, h2, h3, h4{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-weight: 400;
+}
+
+button{
+	font-family: 'Roboto', serif;
+	font-weight: 300;
 }
 
 .s-container{
