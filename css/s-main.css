@@ -64,6 +64,10 @@ h1, h2, h3, h4{
 .s-text-left{
 	text-align: left;
 }
+
+/**********************************
+Start buttons
+**********************************/
 .s-button-primary{
 	border: 1px #448AFF;
 	outline: none;
@@ -77,6 +81,7 @@ h1, h2, h3, h4{
 	-webkit-transition: background-color .2s ease-in; 
 	transition: background-color .2s ease-in;
 }
+
 .s-button-primary:hover{
 	background-color: #1E88E5;
 }
@@ -145,6 +150,96 @@ h1, h2, h3, h4{
 	background-color: #FBC02D;
 }
 
+/***********************************
+Start button outlines
+***********************************/
+.s-button-primary-outline{
+	border: solid #448AFF;
+	outline: none;
+	background-color: white;
+	color: #448AFF;
+	height: 30px;
+	cursor: pointer;
+	-webkit-transition: color .2s ease-in, border .2s ease-in; 
+	transition: color .2s ease-in, border .2s ease-in;
+}
+
+.s-button-primary-outline:hover{
+	color: #1E88E5;
+	border: solid #1E88E5;
+}
+.s-button-primary-outline:active{
+	color: #1976D2;
+	border: solid #1976D2;
+}
+
+
+.s-button-success-outline{
+	border: solid #8BC34A;
+	outline: none;
+	background-color: white;
+	color: #8BC34A;
+	height: 30px;
+	cursor: pointer;
+	-webkit-transition: color .2s ease-in, border .2s ease-in; 
+	transition: color .2s ease-in, border .2s ease-in;
+}
+
+.s-button-success-outline:hover{
+	color: #7CB342;
+	border: solid #7CB342;
+}
+.s-button-success-outline:active{
+	color: #689F38;
+	border: solid #689F38;
+}
+
+.s-button-danger-outline{
+	border: solid #F44336;
+	outline: none;
+	background-color: white;
+	color: #F44336;
+	height: 30px;
+	cursor: pointer;
+	-webkit-transition: color .2s ease-in, border .2s ease-in; 
+	transition: color .2s ease-in, border .2s ease-in;
+}
+
+.s-button-danger-outline:hover{
+	color: #E53935;
+	border: solid #E53935;
+}
+.s-button-danger-outline:active{
+	color: #D32F2F;
+	border: solid #D32F2F;
+}
+
+.s-button-warning-outline{
+	border: solid #FFEB3B;
+	outline: none;
+	background-color: white;
+	color: #FFEB3B;
+	height: 30px;
+	cursor: pointer;
+	-webkit-transition: color .2s ease-in, border .2s ease-in; 
+	transition: color .2s ease-in, border .2s ease-in;
+}
+
+.s-button-warning-outline:hover{
+	color: #FDD835;
+	border: solid #FDD835;
+}
+.s-button-warning-outline:active{
+	color: #FBC02D;
+	border: solid #FBC02D;
+}
+
+
+
+
+/*****************************
+Start shadow types
+*****************************/
 .s-drop-shadow-1{
 	 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
                  0 3px 1px -2px rgba(0, 0, 0, 0.2),
