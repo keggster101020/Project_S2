@@ -47,7 +47,7 @@ input[type="button"] {
     }
 }
 /*For devices larger than 600px*/
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     .container {
         width: 80%;
         padding: 0;
@@ -346,3 +346,20 @@ Start shadow types
 .s-drop-shadow-3 {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4), 0 3px 1px -2px rgba(0, 0, 0, 0.3), 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 }
+
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
