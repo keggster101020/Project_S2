@@ -5,239 +5,314 @@ see here for full details: https://opensource.org/licenses/MIT
 */
 
 
-body{
-	font-family: 'Roboto', serif;
-	font-weight: 400;
-}
-p{
-	font-family: 'Roboto', serif;
-	font-weight: 400;
+body {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
 }
 
-h1, h2, h3, h4{
-	font-family: 'Roboto', serif;
-	font-weight: 400;
+p {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
 }
 
-button{
-	font-family: 'Roboto', serif;
-	font-weight: 300;
+h1, h2, h3, h4 {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
 }
 
-.s-container{
-	width : 100%;
-	max-width : 1920px
+button {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
 }
 
-.s-row:before, 
-.s-row:after {
-	content:"";
-	display: table ;
-	clear:both;
+.s-container {
+    /*width : 100%;
+	max-width : 1920px*/
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.s-col-1, .s-col-2, .s-col-3, .s-col-4, .s-col-5,
-.s-col-6{
-	float: left;
-	min-height:1px;  	
+/*For devices larger than 400px*/
+@media (min-width: 400px) {
+    .container {
+        width: 85%;
+        padding: 0;
+    }
 }
-.s-col-1{
-	width:100%;
+/*For devices larger than 600px*/
+@media (min-width: 600px) {
+    .container {
+        width: 80%;
+        padding: 0;
+    }
+
+
+
+    .s-row:before,
+    .s-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .s-col-1, .s-col-2, .s-col-3, .s-col-4, .s-col-5,
+    .s-col-6 {
+        float: left;
+        min-height: 1px;
+    }
+
+    .s-col-6 {
+        width: 100%;
+    }
+
+    .s-col-5 {
+        width: 83.333333333333%;
+    }
+
+    .s-col-4 {
+        width: 66.666666666667%;
+    }
+
+    .s-col-3 {
+        width: 50%;
+    }
+
+    .s-col-2 {
+        width: 33.333333333333%;
+    }
+
+    .s-col-1 {
+        width: 16.66666666667%;
+    }
 }
-.s-col-2{
-	width:50%;
-}
-.s-col-3{
-	width:33.3333333333%;
-}
-.s-col-4{
-	width: 25%;
-}
-.s-col-5{
-	width : 20%;
-}
-.s-col-6{
-	width: 16.666666667%;
-}
-.s-text-right{
-	text-align: right;
-}
-.s-text-center{
-	text-align: center;
+    
+.s-text-right {
+    text-align: right;
 }
 
-.s-text-left{
-	text-align: left;
+.s-text-center {
+    text-align: center;
+}
+
+.s-text-left {
+    text-align: left;
 }
 
 /**********************************
 Start buttons
 **********************************/
-.s-button-primary{
-	border: 1px #448AFF;
-	outline: none;
-	background-color: #448AFF;
-	color: white;
-	height: 30px;
-	cursor: pointer;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
-                 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
-	-webkit-transition: background-color .2s ease-in; 
-	transition: background-color .2s ease-in;
+.s-button-primary {
+    border: 1px #448AFF;
+    outline: none;
+    background-color: #448AFF;
+    color: white;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+    /*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.3);*/
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
 }
 
-.s-button-primary:hover{
-	background-color: #1E88E5;
-}
-.s-button-primary:active{
-	background-color: #1976D2;
+    .s-button-primary:hover {
+        background-color: #1E88E5;
+    }
+
+    .s-button-primary:active {
+        background-color: #1976D2;
+    }
+
+.s-button-success {
+    border: 1px;
+    outline: none;
+    background-color: #8BC34A;
+    color: white;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+    /*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.3);*/
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
 }
 
-.s-button-success{
-	border: 1px;
-	outline: none;
-	background-color: #8BC34A;
-	color: white;
-	height: 30px;
-	cursor: pointer;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
-                 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
-	-webkit-transition: background-color .2s ease-in; 
-	transition: background-color .2s ease-in;
-}
-.s-button-success:hover{
-	background-color: #7CB342;
-}
-.s-button-success:active{
-	background-color: #689F38;
+    .s-button-success:hover {
+        background-color: #7CB342;
+    }
+
+    .s-button-success:active {
+        background-color: #689F38;
+    }
+
+.s-button-danger {
+    border: 1px;
+    outline: none;
+    background-color: #F44336;
+    color: white;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+    /*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.3);*/
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
 }
 
-.s-button-danger{
-	border: 1px;
-	outline: none;
-	background-color: #F44336;
-	color: white;
-	height: 30px;
-	cursor: pointer;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
-                 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
-	-webkit-transition: background-color .2s ease-in; 
-	transition: background-color .2s ease-in;
-}
-.s-button-danger:hover{
-	background-color: #E53935;
-}
-.s-button-danger:active{
-	background-color: #D32F2F;
+    .s-button-danger:hover {
+        background-color: #E53935;
+    }
+
+    .s-button-danger:active {
+        background-color: #D32F2F;
+    }
+
+.s-button-warning {
+    border: 1px;
+    outline: none;
+    background-color: #FFEB3B;
+    color: black;
+    opacity: .87;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+    /*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.3);*/
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
 }
 
-.s-button-warning{
-	border: 1px;
-	outline: none;
-	background-color: #FFEB3B;
-	color: black;
-	opacity: .87;
-	height: 30px;
-	cursor: pointer;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
-                 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
-	-webkit-transition: background-color .2s ease-in; 
-	transition: background-color .2s ease-in;
-}
-.s-button-warning:hover{
-	background-color: #FDD835;
-}
-.s-button-warning:active{
-	background-color: #FBC02D;
-}
+    .s-button-warning:hover {
+        background-color: #FDD835;
+    }
+
+    .s-button-warning:active {
+        background-color: #FBC02D;
+    }
 
 /***********************************
 Start button outlines
 ***********************************/
-.s-button-primary-outline{
-	border: solid #448AFF;
-	outline: none;
-	background-color: white;
-	color: #448AFF;
-	height: 30px;
-	cursor: pointer;
-	-webkit-transition: color .2s ease-in, border .2s ease-in; 
-	transition: color .2s ease-in, border .2s ease-in;
+.s-button-primary-outline {
+    border: solid #448AFF;
+    outline: none;
+    background-color: white;
+    color: #448AFF;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition: color .2s ease-in, border .2s ease-in;
+    transition: color .2s ease-in, border .2s ease-in;
 }
 
-.s-button-primary-outline:hover{
-	color: #1E88E5;
-	border: solid #1E88E5;
-}
-.s-button-primary-outline:active{
-	color: #1976D2;
-	border: solid #1976D2;
-}
+    .s-button-primary-outline:hover {
+        color: #1E88E5;
+        border: solid #1E88E5;
+    }
+
+    .s-button-primary-outline:active {
+        color: #1976D2;
+        border: solid #1976D2;
+    }
 
 
-.s-button-success-outline{
-	border: solid #8BC34A;
-	outline: none;
-	background-color: white;
-	color: #8BC34A;
-	height: 30px;
-	cursor: pointer;
-	-webkit-transition: color .2s ease-in, border .2s ease-in; 
-	transition: color .2s ease-in, border .2s ease-in;
+.s-button-success-outline {
+    border: solid #8BC34A;
+    outline: none;
+    background-color: white;
+    color: #8BC34A;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition: color .2s ease-in, border .2s ease-in;
+    transition: color .2s ease-in, border .2s ease-in;
 }
 
-.s-button-success-outline:hover{
-	color: #7CB342;
-	border: solid #7CB342;
-}
-.s-button-success-outline:active{
-	color: #689F38;
-	border: solid #689F38;
+    .s-button-success-outline:hover {
+        color: #7CB342;
+        border: solid #7CB342;
+    }
+
+    .s-button-success-outline:active {
+        color: #689F38;
+        border: solid #689F38;
+    }
+
+.s-button-danger-outline {
+    border: solid #F44336;
+    outline: none;
+    background-color: white;
+    color: #F44336;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition: color .2s ease-in, border .2s ease-in;
+    transition: color .2s ease-in, border .2s ease-in;
 }
 
-.s-button-danger-outline{
-	border: solid #F44336;
-	outline: none;
-	background-color: white;
-	color: #F44336;
-	height: 30px;
-	cursor: pointer;
-	-webkit-transition: color .2s ease-in, border .2s ease-in; 
-	transition: color .2s ease-in, border .2s ease-in;
+    .s-button-danger-outline:hover {
+        color: #E53935;
+        border: solid #E53935;
+    }
+
+    .s-button-danger-outline:active {
+        color: #D32F2F;
+        border: solid #D32F2F;
+    }
+
+.s-button-warning-outline {
+    border: solid #FFEB3B;
+    outline: none;
+    background-color: white;
+    color: #FFEB3B;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition: color .2s ease-in, border .2s ease-in;
+    transition: color .2s ease-in, border .2s ease-in;
 }
 
-.s-button-danger-outline:hover{
-	color: #E53935;
-	border: solid #E53935;
-}
-.s-button-danger-outline:active{
-	color: #D32F2F;
-	border: solid #D32F2F;
-}
+    .s-button-warning-outline:hover {
+        color: #FDD835;
+        border: solid #FDD835;
+    }
 
-.s-button-warning-outline{
-	border: solid #FFEB3B;
-	outline: none;
-	background-color: white;
-	color: #FFEB3B;
-	height: 30px;
-	cursor: pointer;
-	-webkit-transition: color .2s ease-in, border .2s ease-in; 
-	transition: color .2s ease-in, border .2s ease-in;
-}
-
-.s-button-warning-outline:hover{
-	color: #FDD835;
-	border: solid #FDD835;
-}
-.s-button-warning-outline:active{
-	color: #FBC02D;
-	border: solid #FBC02D;
-}
+    .s-button-warning-outline:active {
+        color: #FBC02D;
+        border: solid #FBC02D;
+    }
 
 
 
@@ -245,18 +320,14 @@ Start button outlines
 /*****************************
 Start shadow types
 *****************************/
-.s-drop-shadow-1{
-	 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),
-                 0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+.s-drop-shadow-1 {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 }
-.s-drop-shadow-2{
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),
-                 0 3px 1px -2px rgba(0, 0, 0, 0.3),
-                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+
+.s-drop-shadow-2 {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 1px -2px rgba(0, 0, 0, 0.3), 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 }
-.s-drop-shadow-3{
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4),
-                 0 3px 1px -2px rgba(0, 0, 0, 0.3),
-                 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+
+.s-drop-shadow-3 {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4), 0 3px 1px -2px rgba(0, 0, 0, 0.3), 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 }
