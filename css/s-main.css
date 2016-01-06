@@ -20,7 +20,10 @@ h1, h2, h3, h4 {
     font-weight: 400;
 }
 
-button {
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
     font-family: 'Roboto', serif;
     font-weight: 400;
 }
@@ -105,7 +108,8 @@ button {
 /**********************************
 Start buttons
 **********************************/
-.s-button-primary {
+.s-button-primary,
+input#s-button-primary {
     border: 1px #448AFF;
     outline: none;
     background-color: #448AFF;
@@ -122,15 +126,18 @@ Start buttons
     transition: background-color .2s ease-in;
 }
 
-    .s-button-primary:hover {
+    .s-button-primary:hover,
+    input#s-button-primary:hover {
         background-color: #1E88E5;
     }
 
-    .s-button-primary:active {
+    .s-button-primary:active,
+    input#s-button-primary:active {
         background-color: #1976D2;
     }
 
-.s-button-success {
+.s-button-success,
+input#s-button-success {
     border: 1px;
     outline: none;
     background-color: #8BC34A;
@@ -147,15 +154,18 @@ Start buttons
     transition: background-color .2s ease-in;
 }
 
-    .s-button-success:hover {
+    .s-button-success:hover,
+    input#s-button-success:hover {
         background-color: #7CB342;
     }
 
-    .s-button-success:active {
+    .s-button-success:active,
+    input#s-button-success:active {
         background-color: #689F38;
     }
 
-.s-button-danger {
+.s-button-danger,
+input#s-button-danger {
     border: 1px;
     outline: none;
     background-color: #F44336;
@@ -172,15 +182,18 @@ Start buttons
     transition: background-color .2s ease-in;
 }
 
-    .s-button-danger:hover {
+    .s-button-danger:hover,
+    input#s-button-danger:hover {
         background-color: #E53935;
     }
 
-    .s-button-danger:active {
+    .s-button-danger:active,
+    input#s-button-danger:active {
         background-color: #D32F2F;
     }
 
-.s-button-warning {
+.s-button-warning,
+input#s-button-warning {
     border: 1px;
     outline: none;
     background-color: #FFEB3B;
@@ -198,11 +211,13 @@ Start buttons
     transition: background-color .2s ease-in;
 }
 
-    .s-button-warning:hover {
+    .s-button-warning:hover,
+    input#s-button-warning:hover {
         background-color: #FDD835;
     }
 
-    .s-button-warning:active {
+    .s-button-warning:active,
+    input#s-button-warning:active {
         background-color: #FBC02D;
     }
 
