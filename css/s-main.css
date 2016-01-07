@@ -20,6 +20,15 @@ h1, h2, h3, h4 {
     font-weight: 400;
 }
 
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
 button,
 input[type="submit"],
 input[type="reset"],
@@ -39,6 +48,22 @@ input[type="button"] {
     box-sizing: border-box;
 }
 
+
+.s-row:before,
+.s-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.s-col-1, .s-col-2, .s-col-3, .s-col-4, .s-col-5,
+.s-col-6 {
+    float: left;
+    min-height: 1px;
+}
+
 /*For devices larger than 400px*/
 @media (min-width: 400px) {
     .container {
@@ -46,26 +71,23 @@ input[type="button"] {
         padding: 0;
     }
 }
-/*For devices larger than 600px*/
+/*For devices larger than 500px*/
 @media (min-width: 500px) {
     .container {
         width: 80%;
-        padding: 0;
+        box-sizing:border-box;
     }
 
-
-
-    .s-row:before,
-    .s-row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
+    
     .s-col-1, .s-col-2, .s-col-3, .s-col-4, .s-col-5,
     .s-col-6 {
-        float: left;
-        min-height: 1px;
+        margin-left: 3%;
+    }
+
+    
+    .s-col-1:first-child, .s-col-2:first-child, .s-col-3:first-child, .s-col-4:first-child, .s-col-5:first-child,
+    .s-col-6:first-child {
+        margin-left: 0;
     }
 
     .s-col-6 {
@@ -73,23 +95,23 @@ input[type="button"] {
     }
 
     .s-col-5 {
-        width: 83.333333333333%;
+        width: 81.333333333333%;
     }
 
     .s-col-4 {
-        width: 66.666666666667%;
+        width: 64.666666666667%;
     }
 
     .s-col-3 {
-        width: 50%;
+        width: 48%;
     }
 
     .s-col-2 {
-        width: 33.333333333333%;
+        width: 31.333333333333%;
     }
 
     .s-col-1 {
-        width: 16.66666666667%;
+        width: 14.66666666667%;
     }
 }
     
@@ -336,15 +358,21 @@ Start button outlines
 Start shadow types
 *****************************/
 .s-drop-shadow-1 {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 
+                0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                0 1px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .s-drop-shadow-2 {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 1px -2px rgba(0, 0, 0, 0.3), 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2),
+                0 3px 1px -2px rgba(0, 0, 0, 0.3), 
+                0 1px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .s-drop-shadow-3 {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4), 0 3px 1px -2px rgba(0, 0, 0, 0.3), 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4), 
+                0 3px 1px -2px rgba(0, 0, 0, 0.3), 
+                0 1px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 
