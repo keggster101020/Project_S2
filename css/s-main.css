@@ -439,6 +439,7 @@ Starting tooltips
 Starting cards
 *****************************/
 .s-card {
+  font-family: 'Roboto', serif;
   margin: 8px;
   position: relative;
   border-radius: 2px;
@@ -518,25 +519,15 @@ Starting cards
   left: 0;
   right: 0;
   padding: 0 8px;
-  border-top: 1px solid #E0E0E0;
+  border-top: 2px solid #E0E0E0;
   height: 52px;
-  -webkit-transition: left 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: left 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.s-card--button {
-  outline: none;
-  position: relative;
-  display: inline-block;
-  line-height: 52px;
-  padding: 0 16px;
-  color: #ff1744;
-}
-.s-card--big {
+.s-card--large {
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
   height: 304px;
   min-height: 304px;
 }
-.s-card--big .s-card--image {
+.s-card--large .s-card--image {
   border-radius: 1px 1px 0 0;
   left: 0;
   right: 0;
@@ -544,13 +535,13 @@ Starting cards
   opacity: 1;
   max-height: 176px;
 }
-.s-card--big .s-card--title {
+.s-card--large .s-card--title {
   top: 135px;
 }
-.s-card--big .s-card--text {
+.s-card--large .s-card--text {
   top: 176px;
 }
-.s-card--big .s-card--action-bar {
+.s-card--large .s-card--action-bar {
   left: 0;
 }
 .s-card--medium {
@@ -601,10 +592,11 @@ Starting cards
   opacity: 1;
   left: 88px;
 }
-.s-card--small .s-card--text {
-  top: 30px;
+/*.s-card--small .s-card--text {
+  top: 10px;
+  left: 88px;
   opacity: 0;
-}
+}*/
 .s-card--small .s-card--action-bar {
   left: 88px;
 }
