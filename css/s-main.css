@@ -537,6 +537,7 @@ Starting cards
   max-height: 176px;
 }
 .s-card--large .s-card--title {
+  font-size: 20px;
   top: 135px;
 }
 .s-card--large .s-card--text {
@@ -559,10 +560,11 @@ Starting cards
   opacity: 0;
 }
 .s-card--medium .s-card--title {
+  font-size: 18px;
   top: 16px;
 }
 .s-card--medium .s-card--text {
-  font-size: 16px;
+  font-size: 18px;
   top: 50px;
 }
 .s-card--medium .s-card--action-bar {
@@ -585,6 +587,7 @@ Starting cards
   opacity: 0;
 }
 .s-card--small .s-card--title {
+  font-size: 16px;
   color: #000;
   left: 88px;
   top: 8px;
@@ -608,117 +611,104 @@ Starting cards
 /***********************************************
 Navbar for ~tablets~ and smaller
 ***********************************************/
-/*@media(max-width: 750px){*/
-    label {
-        cursor: pointer;
-    }
-    label:focus {
-        outline: none;
-    }
-    
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #fff;
-        width: 240px;
-        height: 100%;
-        transform: translate3d(-240px, 0, 0);
-        transition: transform 0.35s;
-    }
-    .menu label.menu-toggle {
-        position: fixed;
-        right: -60px;
-        width: 60px;
-        height: 60px;
-        line-height: 0px;
-        display: block;
-        padding: 0;
-        text-indent: -9999px;
-        background: #fff url(../glyphs/lines_menu.png) 50% 50%/25px 25px no-repeat;
-    }
-    
-    .menu ul li {
-        list-style-type: none;
-    }
-    .menu ul li > label {
-        background: url(../glyphs/arrow-right.png) 95% 50%/16px 16px no-repeat;
-    }
-    .menu ul li a, .menu ul li label {
-        display: block;
-        text-align: center;
-        padding: 0 20px;
-        line-height: 60px;
-        text-decoration: none;
-        color: #000;
-    }
-    .menu ul li a:hover, .menu ul li label:hover {
-        color: #666;
-    }
-    
-    /* hide inputs */
-    .menu-checkbox {
-        display: none;
-    }
-    
-    /* hide navigation icon for sublabels */
-    .menu .menu label.menu-toggle {
-        background: none;
-    }
-    
-    /* fade in checked menu */
-    .menu-checkbox:checked + .menu {
-        transform: translate3d(0, 0, 0);
-    }
-/*}*/
+label {
+    cursor: pointer;
+}
+label:focus {
+    outline: none;
+}
 
-/***********************
-Nav bar for full screens
-***********************/
-/*@media(min-width:750px){
-    .menu{
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: block;
-        background: #333;
-        width: 100%;
-    }
-    
-    .menu-checkbox{
-        display: none;
-    }
-    .menu ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    .menu ul li{
-        list-style-type: none;
-        float: left;
-    }
-    .menu ul li a, .menu ul li label{
-        display: inline;
-        text-align: center;
-        padding: 0 20px;
-        line-height: 5px;
-        color: #fff;
-        
-    }
-    
-}*/
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 240px;
+    height: 100%;
+    transform: translate3d(-240px, 0, 0);
+    transition: transform 0.35s;
+}
+.menu label.menu-toggle {
+    position: fixed;
+    right: -60px;
+    width: 60px;
+    height: 60px;
+    line-height: 0px;
+    display: block;
+    padding: 0;
+    text-indent: -9999px;
+    background: #fff url(../glyphs/lines_menu.png) 50% 50%/25px 25px no-repeat;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+.menu ul li > label {
+    background: url(../glyphs/arrow-right.png) 95% 50%/16px 16px no-repeat;
+}
+.menu ul li a, .menu ul li label {
+    display: block;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000;
+}
+.menu ul li a:hover, .menu ul li label:hover {
+    color: #666;
+}
+
+/* hide inputs */
+.menu-checkbox {
+    display: none;
+}
+
+/* hide navigation icon for sublabels */
+.menu .menu label.menu-toggle {
+    background: none;
+}
+
+/* fade in checked menu */
+.menu-checkbox:checked + .menu {
+    transform: translate3d(0, 0, 0);
+}
+
 
 
 /*********************
-Starting toggle types:
--checkbox
--radiobox
+Starting form elements
 *********************/
+label{
+    font-weight: 400;
+    font-size: 16px;
+}
+.s-form-control{
+    float: left
+}
+input[type="text"], intput[type="email"], input[type="tel"],
+input[type="password"], input[type="url"], textarea{
+    display: inline-block;
+    padding: 8px;
+    height: 40px;
+    box-sizing: border-box;
+    line-height: normal;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    background-color: white;
+    border: .5px solid #ccc;
+    color: #333;
+}
+input[type="text"]:disabled, intput[type="email"]:disabled, input[type="tel"]:disabled,
+input[type="password"]:disabled, input[type="url"]:disabled, textarea:disabled{
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: white;
+    border: .5px solid #ccc;
+    color: #333;
+    background-color: #848482;
+}
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
