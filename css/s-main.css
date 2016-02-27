@@ -128,6 +128,10 @@ input[type="button"] {
     text-align: left;
 }
 
+.s-full-width{
+    width: 100%;
+}
+
 /**********************************
 Start buttons
 **********************************/
@@ -679,16 +683,26 @@ label:focus {
 Starting form elements
 *********************/
 label{
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    cursor: default;
+    margin-bottom: .5rem;
 }
-.s-form-control{
-    float: left
+
+textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
-input[type="text"], intput[type="email"], input[type="tel"],
-input[type="password"], input[type="url"], textarea{
+
+input, textarea, select{
+    margin-bottom: 1.25rem;
+}
+
+input[type="text"], input[type="search"] intput[type="email"], input[type="tel"],
+input[type="password"], input[type="url"],
+input[type="number"], textarea, select{
     display: inline-block;
-    padding: 8px;
+    padding: 8px 10px;
     height: 40px;
     box-sizing: border-box;
     line-height: normal;
@@ -700,7 +714,9 @@ input[type="password"], input[type="url"], textarea{
     color: #333;
 }
 input[type="text"]:disabled, intput[type="email"]:disabled, input[type="tel"]:disabled,
-input[type="password"]:disabled, input[type="url"]:disabled, textarea:disabled{
+input[type="password"]:disabled, input[type="url"]:disabled,
+input[type="search"]:disabled, input[type="number"]:disabled,
+textarea:disabled, select:disabled {
     display: inline-block;
     height: 40px;
     box-sizing: border-box;
