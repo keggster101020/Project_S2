@@ -757,10 +757,12 @@ table.s-table tr{
 
 table.s-table th, 
 table.s-table tbody, 
-table.s-table thead{
+table.s-table thead,
+table.s-table td{
     padding: 12px;
     text-align: left;
 }
+
 
 table.s-table thead td {
     border-bottom:2px solid rgba(204, 204, 204, .8);
@@ -768,6 +770,12 @@ table.s-table thead td {
 
 table.s-table tbody td{
     border-bottom:1px solid rgba(230, 230, 230, .9);
+}
+
+
+
+.striped tbody tr:nth-child(2n){
+    background-color: rgba(68, 138, 255, .1);
 }
 
 table.s-table tr:hover{
