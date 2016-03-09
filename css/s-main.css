@@ -634,6 +634,7 @@ label:focus {
     height: 100%;
     transform: translate3d(-240px, 0, 0);
     transition: transform 0.35s;
+    z-index: 1;
 }
 .menu label.menu-toggle {
     position: fixed;
@@ -743,12 +744,10 @@ table.s-table{
 table.s-table thead, 
 table.s-table th{
     font-weight: 500;
-    /*border-bottom: rgba(204, 204, 204, .8);*/
 }
 
 table.s-table tbody{
     font-weight: 400;
-    /*border-bottom: rgba(230, 230, 230, .9);*/
 }
 
 table.s-table tr{
@@ -780,6 +779,56 @@ table.s-table tbody td{
 
 table.s-table tr:hover{
     background-color: rgba(204, 204, 204, .3);
+}
+
+
+/**************************
+Making a header element
+**************************/
+@media(min-width: 500px){
+    .s-header{
+        height: 200px;
+        width: 100vw;
+        left: calc(-50vw + 50%);
+        position: relative;
+        padding: 50px 28vw 100px;
+        line-height: 1.45px;
+    }
+}
+.s-header h1, .s-header h2, .s-header h3,
+.s-header h4{
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+@media(max-width: 500px){
+    .s-header{
+        width: 100vw;
+        height: 100px;
+        padding: 20px 5vw 100px;
+        left: calc(-50vw + 50%);
+        position: relative;
+    }
+}
+
+.s-header.blue{
+    background-color: rgba(79, 193, 233, .9);
+    color: white;
+}
+
+.s-header.red{
+    background-color: rgba(218, 68, 83, .9);
+    color: white;
+}
+
+.s-header.green{
+    background-color: rgba(140, 193, 82, .9);
+    color: white;
+}
+
+.s-header.black{
+    background-color: rgba(67, 74, 84, .9);
+    color: white;
 }
 
 /* Larger than mobile */
