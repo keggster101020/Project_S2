@@ -831,6 +831,66 @@ Making a header element
     color: white;
 }
 
+.s-header a{
+    color: white;
+}
+
+.s-header a:visited{
+    color: #b7b7b7;
+}
+
+.s-header a:hover{
+    color: #ccc;
+}
+
+/*******************
+Footer Element
+********************/
+@media(min-width: 500px){
+    .s-footer{
+        height: 55px;
+        width: 100vw;
+        left: calc(-50vw + 50%);
+        position: relative;
+        padding: 50px 25vw 100px;
+        border-top: 10px solid #ccc;
+        background-color: rgba(67, 74, 84, .9);
+        color: white;
+    }
+}
+.s-footer h1, .s-footer h2, .s-footer h3,
+.s-footer h4{
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.s-footer p{
+    font-weight: 300;
+}
+
+.s-footer a{
+    color: white;
+}
+.s-footer a:visited{
+    color: #b7b7b7;
+}
+.s-footer a:hover{
+    color: #ccc;
+}
+
+
+@media(max-width: 500px){
+    .s-footer{
+        width: 100vw;
+        height: 60px;
+        padding: 20px 5vw 100px;
+        left: calc(-50vw + 50%);
+        position: relative;
+        background-color: rgba(67, 74, 84, .9);
+        color: white;
+    }
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
