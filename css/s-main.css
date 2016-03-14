@@ -69,14 +69,14 @@ hr{
 }
 
 /*For devices larger than 400px*/
-@media (min-width: 400px) {
+@media (min-width: 200px) {
     .container {
         width: 85%;
         padding: 0;
     }
 }
 /*For devices larger than 500px*/
-@media (min-width: 500px) {
+@media (min-width: 300px) {
     .container {
         width: 80%;
         box-sizing:border-box;
