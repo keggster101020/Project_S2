@@ -25,6 +25,15 @@ h1, h2, h3, h4 {
   h6 { font-size: 1.5rem; }
 }
 
+@media (max-width: 550px) {
+  h1 { font-weight: 500; }
+  h2 { font-weight: 500; }
+  h3 { font-weight: 500; }
+  h4 { font-weight: 500; }
+  h5 { font-weight: 500; }
+  h6 { font-weight: 500; }
+}
+
 button,
 input[type="submit"],
 input[type="reset"],
@@ -454,8 +463,12 @@ Starting cards
   overflow: hidden;
   background-color: #fff;
   height: 35%;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
+  /*width: 350px;*/
 }
+
+
 .s-card--image {
   position: absolute;
   background-size: cover;
@@ -508,7 +521,7 @@ Starting cards
   opacity: 0;
 }
 .s-card--text {
-  font-size: 14px;
+  font-size: 12px;
   display: block;
   left: 0;
   right: 0;
@@ -645,7 +658,7 @@ label:focus {
     display: block;
     padding: 0;
     text-indent: -9999px;
-    background: #fff url(../glyphs/lines_menu.png) 50% 50%/25px 25px no-repeat;
+    background: url(../glyphs/lines_menu.png) 50% 50%/25px 25px no-repeat;
 }
 
 .menu ul li {
@@ -788,17 +801,40 @@ Making a header element
 @media(min-width: 500px){
     .s-header{
         height: 200px;
-        width: 100vw;
-        left: calc(-50vw + 50%);
+        width: 100%;
+        /*width: 100vw;
+        left: calc(-50vw + 50%);*/
         position: relative;
         padding: 50px 28vw 100px;
-        line-height: 1.45px;
+        overflow: hidden;
+        line-height: 30px;
+        overflow: hidden;
     }
-}
-.s-header h1, .s-header h2, .s-header h3,
-.s-header h4{
-    font-weight: 300;
-    padding-bottom: 15px;
+    
+    .s-header h1, .s-header h2, .s-header h3,
+    .s-header h4{
+      padding-right: 15%;
+    }
+
+      .s-header h1{
+      font-size: 3.25em;
+    }
+
+    .s-header h2{
+      font-size: 2.75em;
+    }
+
+    .s-header h3{
+      font-size: 2.0em;
+    }
+
+    .s-header h4{
+      font-size: 1.75em;
+    }
+
+    .s-header p{
+      padding-right: 30%;
+    }
 }
 
 @media(max-width: 500px){
@@ -808,7 +844,19 @@ Making a header element
         padding: 20px 5vw 100px;
         left: calc(-50vw + 50%);
         position: relative;
+        overflow: hidden;
     }
+}
+
+
+.s-header h1, .s-header h2, .s-header h3,
+.s-header h4{
+    font-weight: 300;
+    /*padding-bottom: 15px;*/
+}
+
+.s-header p{
+  line-height: 17px;
 }
 
 .s-header.blue{
@@ -849,8 +897,9 @@ Footer Element
 @media(min-width: 500px){
     .s-footer{
         height: 55px;
-        width: 100vw;
-        left: calc(-50vw + 50%);
+        width: 100%;
+        /*width: 100vw;
+        left: calc(-50vw + 50%);*/
         position: relative;
         padding: 50px 25vw 100px;
         border-top: 10px solid #ccc;
@@ -861,7 +910,7 @@ Footer Element
 .s-footer h1, .s-footer h2, .s-footer h3,
 .s-footer h4{
     font-weight: 300;
-    padding-bottom: 15px;
+    /*padding-bottom: 15px;*/
 }
 
 .s-footer p{
