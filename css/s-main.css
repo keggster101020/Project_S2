@@ -914,6 +914,7 @@ Footer Element
         height: 55px;
         width: 100%;
         box-sizing: border-box;
+        bottom: 0;
         /*width: 100vw;
         left: calc(-50vw + 50%);*/
         position: relative;
@@ -948,6 +949,7 @@ Footer Element
     .s-footer{
         width: 100vw;
         height: 60px;
+        bottom: 0;
         /*box-sizing: border-box;*/
         padding: 20px 5vw 100px;
         left: calc(-50vw + 50%);
