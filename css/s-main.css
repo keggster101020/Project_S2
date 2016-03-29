@@ -520,7 +520,7 @@ Starting cards
   padding: 0 16px;
   opacity: 0;
 }
-.s-card--text {
+.s-card--text, p.s-card--text {
   font-size: 12px;
   display: block;
   left: 0;
@@ -800,8 +800,9 @@ Making a header element
 **************************/
 @media(min-width: 500px){
     .s-header{
-        height: 200px;
+        height: 300px;
         width: 100%;
+        box-sizing: border-box;
         /*width: 100vw;
         left: calc(-50vw + 50%);*/
         position: relative;
@@ -841,6 +842,7 @@ Making a header element
     .s-header{
         width: 100vw;
         height: 100px;
+        /*box-sizing: border-box;*/
         padding: 20px 5vw 100px;
         left: calc(-50vw + 50%);
         position: relative;
@@ -898,6 +900,7 @@ Footer Element
     .s-footer{
         height: 55px;
         width: 100%;
+        box-sizing: border-box;
         /*width: 100vw;
         left: calc(-50vw + 50%);*/
         position: relative;
@@ -932,6 +935,7 @@ Footer Element
     .s-footer{
         width: 100vw;
         height: 60px;
+        /*box-sizing: border-box;*/
         padding: 20px 5vw 100px;
         left: calc(-50vw + 50%);
         position: relative;
