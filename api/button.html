@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Basic Page Needs-->
+        <meta charset="utf-8">
+        <title>Simply Square</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,100italic,300italic,400italic,500,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="../css/s-main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    
+    <body>
+        <style>
+            .s{
+                color: indianred;
+                page-break-after: avoid;
+            }
+            
+            .tg{
+                color: cornflowerblue;
+            }
+            
+            .c{
+                color: lightsteelblue; 
+            }
+            
+            .outline{
+                border: 1px solid lightsteelblue;
+                padding: 10px 30px;
+                
+            }
+        </style>
+        <!-- Navigation menu -->
+        <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+        <div class="menu">
+            <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <label for="menu-3">API</label>
+                    <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+                    <div class="menu">
+                        <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+                        <ul>
+                            <li>
+                                <a href="button.html">Button</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="api/buttom.html">Card</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="api/buttom.html">Form</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="api/buttom.html">Grid</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="api/buttom.html">Header/Footer</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="api/buttom.html">Navigation</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="api/buttom.html">Table</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="api/buttom.html">Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../download.html">Download</a>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <!-- Header for the page -->
+        
+        <div class="s-header green">
+             <h1> Buttons </h1>   
+        </div>
+        
+        <br />
+        <br />
+        
+        <!-- Starting content -->
+        <div class="s-container">
+            <div class="s-row">
+                <div class="s-col-1"></div>
+                <div class="s-col-3">
+                    <p> There are two types of buttons: main buttons or solid buttons,
+                        and outline buttons. The solid buttons come in a set of colors 
+                        for different scenerios. The outline buttons come in the same styles
+                        as the solid buttons but are only outlines.
+                    </p>
+                    <p>
+                        All buttons start with the notifier class <strong> s-button </strong>
+                        they are then followed by the color type and the optional outline property.
+                    </p>
+                </div>
+            </div>
+            <div class="s-row">
+                <div class="s-col-1"></div>
+                <div class="s-col-3">
+                    Button types are as follows:
+                    <ul>
+                        <li>s-button-primary</li>
+                        <li>s-button-success</li>
+                        <li>s-button-danger</li>
+                        <li>s-button-warning</li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr>
+            
+            <div class="s-row">
+                <div class="s-col-1"></div>
+                <div class="s-col-4">
+                    <button class="s-button-primary">Primary Button</button>
+                    <button class="s-button-success">Success Button</button>
+                    <button class="s-button-warning">Warning Button</button>
+                    <button class="s-button-danger">Danger Button</button>
+                </div>
+            </div>
+            <br />
+            <div class="s-row">
+                <div class="s-col-1"></div>
+                <div class="s-col-4">
+                    <figure class="outline">
+                            <code lang="html" data-lang="html">
+                                <nobr>
+                                <span class="tg"> &ltbutton </span>
+                                <span class="c"> class= </span>
+                                <span class="s">"s-button-primary"</span>
+                                <span class="tg">&gt</span>
+                                <span> Primary Button </span>
+                                <span class="tg"> &lt/button&gt </span>
+                                </nobr>
+                                <nobr>
+                                <span class="tg"> &ltbutton </span>
+                                <span class="c"> class= </span>
+                                <span class="s">"s-button-success"</span>
+                                <span class="tg">&gt</span>
+                                <span> Success Button </span>
+                                <span class="tg"> &lt/button&gt </span>
+                                </nobr>
+                                <nobr>
+                                <span class="tg"> &ltbutton </span>
+                                <span class="c"> class= </span>
+                                <span class="s">"s-button-warning"</span>
+                                <span class="tg">&gt</span>
+                                <span> Warning Button </span>
+                                <span class="tg"> &lt/button&gt </span>
+                                </nobr>
+                                <nobr>
+                                <span class="tg"> &ltbutton </span>
+                                <span class="c"> class= </span>
+                                <span class="s">"s-button-danger"</span>
+                                <span class="tg">&gt</span>
+                                <span> Danger Button </span>
+                                <span class="tg"> &lt/button&gt </span>
+                                </nobr>
+                            </code>
+                    </figure>
+                </div>
+            </div>
+            
+            <br />
+            <br />
+            <hr />
+            
+            <div class="s-row">
+                <div class="s-col-1"></div>
+                <div class="s-col-3">
+                    <p>
+                        These button types also extend to inputs as shown below
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="s-row">
+                <div class="s-col-2"></div>
+                <div class="s-col-4">
+                    <input type="submit" class="s-button-success" value="Success Submit Button" />
+                </div>
+            </div>
+            <div class="s-row">
+                <div class="s-col-6">
+                    <figure class="outline">
+                            <code lang="html" data-lang="html">
+                                <nobr>
+                                <span class="tg"> &ltinput </span>
+                                <span class="c">type=</span>
+                                <span class="s">"submit"</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-button-success"</span>
+                                <span class="c">value=</span>
+                                <span class="s">"Submit Button"</span>
+                                <span class="tg">&gt</span>
+                                <span> Submit </span>
+                                <span class="tg"> &lt/input&gt </span>
+                                </nobr>
+                            </code>
+                    </figure>
+                </div>
+            </div>
+            <br />
+            <br />
+            
+        </div>
+        <div class="s-footer">
+		<div class="s-row">
+			<div class="s-col-3">
+				<p>
+					This framework was created for the senior thesis project at Allegheny College by Keegan Shudy
+				</p>
+			</div>
+		</div>
+	</div>
+        
+        
+        
+    </body>
