@@ -149,12 +149,21 @@ Start buttons
 **********************************/
 .s-button-primary,
 input#s-button-primary {
+    background: transparent;
+    position: relative;
+    display: inline-block;
     border: 1px #448AFF;
     outline: none;
     background-color: #448AFF;
     color: white;
-    height: 30px;
+    height: 36px;
+    min-width: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 12px;
@@ -178,11 +187,19 @@ input#s-button-primary {
 .s-button-success,
 input#s-button-success {
     border: 1px;
+    background: transparent;
     outline: none;
+    position: relative;
     background-color: #8BC34A;
     color: white;
-    height: 30px;
+    height: 36px;
+    min-width: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 12px;
@@ -206,11 +223,19 @@ input#s-button-success {
 .s-button-danger,
 input#s-button-danger {
     border: 1px;
+    background: transparent;
+    position: relative;
     outline: none;
     background-color: #F44336;
     color: white;
-    height: 30px;
+    height: 36px;
+    min-width: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 12px;
@@ -234,12 +259,20 @@ input#s-button-danger {
 .s-button-warning,
 input#s-button-warning {
     border: 1px;
+    background: transparent;
+    position: relative;
     outline: none;
     background-color: #FFEB3B;
     color: black;
     opacity: .87;
-    height: 30px;
+    height: 36px;
+    min-width: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 12px;
@@ -264,19 +297,28 @@ input#s-button-warning {
 Start button outlines
 ***********************************/
 .s-button-primary-outline {
+    position: relative;
+    background: transparent;
     border: solid #448AFF;
     outline: none;
     background-color: white;
     color: #448AFF;
-    height: 30px;
+    height: 36px;
+    min-width: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 12px;
     padding: 0 20px;
     cursor: pointer;
-    -webkit-transition: color .2s ease-in, border .2s ease-in;
-    transition: color .2s ease-in, border .2s ease-in;
+    /*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.3);*/
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
 }
 
     .s-button-primary-outline:hover {
@@ -291,12 +333,20 @@ Start button outlines
 
 
 .s-button-success-outline {
+    background: transparent;
+    position: relative;
     border: solid #8BC34A;
     outline: none;
     background-color: white;
     color: #8BC34A;
-    height: 30px;
+    height: 36px;
+    min-width: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 12px;
@@ -317,12 +367,20 @@ Start button outlines
     }
 
 .s-button-danger-outline {
+    background: transparent;
+    position: relative;
     border: solid #F44336;
     outline: none;
     background-color: white;
     color: #F44336;
-    height: 30px;
+    height: 36px;
+    min-width: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 12px;
@@ -343,12 +401,20 @@ Start button outlines
     }
 
 .s-button-warning-outline {
+    background: transparent;
+    position: relative;
     border: solid #FFEB3B;
     outline: none;
     background-color: white;
     color: #FFEB3B;
-    height: 30px;
+    height: 36px;
+    min-width: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 12px;
