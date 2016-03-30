@@ -30,8 +30,11 @@
             
             .outline{
                 border: 1px solid lightsteelblue;
-                padding: 10px 30px;
+                padding: 10px 10px;
                 
+            }
+            span{
+                white-space: normal;
             }
         </style>
         <!-- Navigation menu -->
@@ -108,8 +111,8 @@
         <!-- Starting content -->
         <div class="s-container">
             <div class="s-row">
-                <div class="s-col-1"></div>
-                <div class="s-col-3">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
                     <p> There are two types of buttons: main buttons or solid buttons,
                         and outline buttons. The solid buttons come in a set of colors 
                         for different scenerios. The outline buttons come in the same styles
@@ -122,8 +125,8 @@
                 </div>
             </div>
             <div class="s-row">
-                <div class="s-col-1"></div>
-                <div class="s-col-3">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
                     Button types are as follows:
                     <ul>
                         <li>s-button-primary</li>
@@ -153,36 +156,36 @@
                     <figure class="outline">
                             <code lang="html" data-lang="html">
                                 <nobr>
-                                <span class="tg"> &ltbutton </span>
-                                <span class="c"> class= </span>
+                                <span class="tg">&ltbutton</span>
+                                <span class="c">class=</span>
                                 <span class="s">"s-button-primary"</span>
                                 <span class="tg">&gt</span>
-                                <span> Primary Button </span>
-                                <span class="tg"> &lt/button&gt </span>
+                                <span>Primary Button</span>
+                                <span class="tg">&lt/button&gt</span>
                                 </nobr>
                                 <nobr>
-                                <span class="tg"> &ltbutton </span>
-                                <span class="c"> class= </span>
+                                <span class="tg">&ltbutton</span>
+                                <span class="c">class=</span>
                                 <span class="s">"s-button-success"</span>
                                 <span class="tg">&gt</span>
-                                <span> Success Button </span>
-                                <span class="tg"> &lt/button&gt </span>
+                                <span>Success Button</span>
+                                <span class="tg">&lt/button&gt</span>
                                 </nobr>
                                 <nobr>
-                                <span class="tg"> &ltbutton </span>
-                                <span class="c"> class= </span>
+                                <span class="tg">&ltbutton</span>
+                                <span class="c">class=</span>
                                 <span class="s">"s-button-warning"</span>
                                 <span class="tg">&gt</span>
-                                <span> Warning Button </span>
-                                <span class="tg"> &lt/button&gt </span>
+                                <span>Warning Button</span>
+                                <span class="tg">&lt/button&gt</span>
                                 </nobr>
                                 <nobr>
-                                <span class="tg"> &ltbutton </span>
-                                <span class="c"> class= </span>
+                                <span class="tg">&ltbutton</span>
+                                <span class="c">class=</span>
                                 <span class="s">"s-button-danger"</span>
                                 <span class="tg">&gt</span>
-                                <span> Danger Button </span>
-                                <span class="tg"> &lt/button&gt </span>
+                                <span>Danger Button</span>
+                                <span class="tg">&lt/button&gt</span>
                                 </nobr>
                             </code>
                     </figure>
@@ -194,8 +197,8 @@
             <hr />
             
             <div class="s-row">
-                <div class="s-col-1"></div>
-                <div class="s-col-3">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
                     <p>
                         These button types also extend to inputs as shown below
                     </p>
@@ -209,20 +212,18 @@
                 </div>
             </div>
             <div class="s-row">
-                <div class="s-col-6">
+                <div class="s-col-5">
                     <figure class="outline">
                             <code lang="html" data-lang="html">
                                 <nobr>
-                                <span class="tg"> &ltinput </span>
+                                <span class="tg">&ltinput</span>
                                 <span class="c">type=</span>
                                 <span class="s">"submit"</span>
                                 <span class="c">class=</span>
                                 <span class="s">"s-button-success"</span>
                                 <span class="c">value=</span>
                                 <span class="s">"Submit Button"</span>
-                                <span class="tg">&gt</span>
-                                <span> Submit </span>
-                                <span class="tg"> &lt/input&gt </span>
+                                <span class="tg">/&gt</span>
                                 </nobr>
                             </code>
                     </figure>
@@ -230,6 +231,38 @@
             </div>
             <br />
             <br />
+            <hr />
+            <div class="s-row">
+                <div class="s-col-5">
+                    <p>
+                        All of these button types can also be extended to the outline button
+                        type by adding <strong>-outline</strong> to the end of the class name
+                    </p>
+                </div>
+            </div>
+            
+            <br />
+            <div class="s-row">
+                <div class="s-col-2"></div>
+                <div class="s-col-4">
+                    <button class="s-button-success-outline">Success Outline </button>
+                </div>
+            </div>
+            <div class="s-row">
+                <div class="s-col-1"> </div>
+                <div class="s-col-4">
+                    <figure class="outline">
+                            <code lang="html" data-lang="html">
+                                <nobr>
+                                <span class="tg">&ltbutton</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-button-success-outline"</span>
+                                <span class="tg">&lt/button&gt</span>
+                                </nobr>
+                            </code>
+                    </figure>
+                </div>
+            </div>
             
         </div>
         <div class="s-footer">
