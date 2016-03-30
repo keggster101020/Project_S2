@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Basic Page Needs-->
+        <meta charset="utf-8">
+        <title>Simply Square</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,100italic,300italic,400italic,500,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="../css/s-main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    
+    <body>
+        <style>
+            .s{
+                color: indianred;
+                page-break-after: avoid;
+            }
+            
+            .tg{
+                color: cornflowerblue;
+            }
+            
+            .c{
+                color: lightsteelblue; 
+            }
+            
+            .outline{
+                border: 1px solid lightsteelblue;
+                padding: 10px 10px;
+                
+            }
+            span{
+                white-space: normal;
+            }
+			.comment{
+				color: green;
+			}
+        </style>
+         <!-- Navigation menu -->
+        <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+        <div class="menu">
+            <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <label for="menu-3">API</label>
+                    <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+                    <div class="menu">
+                        <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+                        <ul>
+                            <li>
+                                <a href="button.html">Button</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="card.html">Card</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="form.html">Form</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="grid.html">Grid</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="header-footer.html">Header/Footer</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="navigation.html">Navigation</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="table.html">Table</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="util.html">Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../download.html">Download</a>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <!-- Header for the page -->
+        
+        <div class="s-header black">
+             <h1> Grid and Layout </h1>   
+        </div>
+        
+        <br />
+        <br />
+        
+        <!-- Starting content -->
+        <div class="s-container">
+            <div class="s-row">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
+                    <p> 
+                        Navigation is a way for users to get to and from pages
+						on your website in a centralized fashion.
+						Navigation is placed after the body tag and
+						should not be nested inside any containers or 
+						grid system elements.
+                    </p>
+					<p>
+						The basic setup for the navigation menu is as follows:
+						div menu > label > unordered list > list items.
+						If a nested menu is needed, it is a simple process 
+						of just adding another div menu > label combination 
+						inside of a list item. 
+						So your <strong>li</strong> tag would contain another 
+						menu structure inside it.
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr>
+			
+			<div class="s-row">
+				<div class="s-col-6">
+					<figure class="outline">
+						<code lang="html">
+							<nobr>
+								<span class="tg">&ltinput</span>
+								<span class="c">type=</span>
+								<span class="s">"checkbox"</span>
+								<span class="c">id=</span>
+								<span class="s">"menu"</span>
+								<span class="c">name=</span>
+								<span class="s">"menu"</span>
+								<span class="c">class=</span>
+								<span class="s">"menu-checkbox"</span>
+								<span class="tg">&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&ltdiv</span>
+								<span class="c">class=</span>
+								<span class="s">"menu"</span>
+								<span class="tg">&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&ltlabel</span>
+								<span class="c">class=</span>
+								<span class="s">"menu-toggle"</span>
+								<span class="c">for=</span>
+								<span class="s">"menu"</span>
+								<span class="tg">&ltspan&gt</span>
+								<span>Toggle</span>
+								<span class="tg">&lt/span&gt</span>
+								<span class="tg">&lt/label&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&ltul&gt</span>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&ltli&gt &lta</span>
+								<span class="c">href=</span>
+								<span class="s">"URL"</span>
+								<span class="tg">&gt</span>
+								<span> Menu Item 1 </span>
+								<span class="tg">&lt/a&gt</span>
+								<span class="tg">&lt/li&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&ltli&gt &lta</span>
+								<span class="c">href=</span>
+								<span class="s">"URL"</span>
+								<span class="tg">&gt</span>
+								<span> Menu Item 2 </span>
+								<span class="tg">&lt/a&gt</span>
+								<span class="tg">&lt/li&gt</span>
+							</nobr>
+							<br />
+							<span class="comment">&lt!-- Starting nested menu --&gt</span>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&ltli&gt</span>
+							<br />
+							<!--Start nested menu-->
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&ltinput</span>
+								<span class="c">type=</span>
+								<span class="s">"checkbox"</span>
+								<span class="c">id=</span>
+								<span class="s">"sub-menu"</span>
+								<span class="c">name=</span>
+								<span class="s">"sub-menu"</span>
+								<span class="c">class=</span>
+								<span class="s">"menu-checkbox"</span>
+								<span class="tg">&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+								<span class="c">class=</span>
+								<span class="s">"menu"</span>
+								<span class="tg">&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&ltlabel</span>
+								<span class="c">class=</span>
+								<span class="s">"menu-toggle"</span>
+								<span class="c">for=</span>
+								<span class="s">"sub-menu"</span>
+								<span class="tg">&ltspan&gt</span>
+								<span>Toggle</span>
+								<span class="tg">&lt/span&gt</span>
+								<span class="tg">&lt/label&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltli&gt &lta</span>
+								<span class="c">href=</span>
+								<span class="s">"URL"</span>
+								<span class="tg">&gt</span>
+								<span> Sub-menu Item 1 </span>
+								<span class="tg">&lt/a&gt</span>
+								<span class="tg">&lt/li&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&lt/div&gt</span>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&lt/li&gt</span>
+							<br />
+							<span class="tg">&nbsp&nbsp&lt/ul&gt</span>
+							<br />
+							<span class="tg">&lt/div&gt</span>
+							
+							
+						</code>
+					</figure>
+				</div>
+			</div>
+		
+		</div>
+           
+           <br />
+            
+        </div>
+        <div class="s-footer">
+		<div class="s-row">
+			<div class="s-col-3">
+				<p>
+					This framework was created for the senior thesis project at Allegheny College by Keegan Shudy
+				</p>
+			</div>
+		</div>
+	</div>
+        
+        
+        
+    </body>
