@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Basic Page Needs-->
+        <meta charset="utf-8">
+        <title>Simply Square</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,100italic,300italic,400italic,500,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="../css/s-main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    
+    <body>
+        <style>
+            .s{
+                color: indianred;
+                page-break-after: avoid;
+            }
+            
+            .tg{
+                color: cornflowerblue;
+            }
+            
+            .c{
+                color: lightsteelblue; 
+            }
+            
+            .outline{
+                border: 1px solid lightsteelblue;
+                padding: 10px 10px;
+                
+            }
+            span{
+                white-space: normal;
+            }
+			.comment{
+				color: green;
+			}
+        </style>
+         <!-- Navigation menu -->
+        <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+        <div class="menu">
+            <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <label for="menu-3">API</label>
+                    <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+                    <div class="menu">
+                        <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+                        <ul>
+                            <li>
+                                <a href="button.html">Button</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="card.html">Card</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="form.html">Form</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="grid.html">Grid</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="header-footer.html">Header/Footer</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="navigation.html">Navigation</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="table.html">Table</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="util.html">Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../download.html">Download</a>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <!-- Header for the page -->
+        
+        <div class="s-header blue">
+             <h1> Tables </h1>   
+        </div>
+        
+        <br />
+        <br />
+        
+        <!-- Starting content -->
+        <div class="s-container">
+            <div class="s-row">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
+                    <p> 
+                        Tables are a way to display information in a grid like fashon
+						to the users. This framework supports two table styles: 
+						striped and non-striped.
+						
+						Note: tables should usually be placed inside a row element. 
+						See <a href="grid.html">grid</a> for more information about
+						rows.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr>
+			<div class="s-row">
+				<h3>Normal Style Table</h3>
+             <table class="s-table">
+                 <thead>
+                     <tr>
+                         <td> Row 1 </td>
+                         <td> Row 2 </td>
+                         <td> Row 3 </td>
+                         <td> Row 4 </td>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td> R1 Value 1</td>
+                         <td> R2 Value 1</td>  
+                         <td> R3 Value 1</td>  
+                         <td> R4 Value 1</td>  
+                     </tr>
+                     <tr>
+                         <td> R1 Value 2</td>
+                         <td> R2 Value 2</td>  
+                         <td> R3 Value 2</td>  
+                         <td> R4 Value 2</td>   
+                     </tr>
+                     <tr>
+                         <td> R1 Value 3</td>
+                         <td> R2 Value 3</td>  
+                         <td> R3 Value 3</td>  
+                         <td> R4 Value 3</td> 
+                     </tr>
+                     <tr>
+                         <td> R1 Value 4</td>
+                         <td> R2 Value 4</td>  
+                         <td> R3 Value 4</td>  
+                         <td> R4 Value 4</td>
+                     </tr>
+                 </tbody>
+                 </table>
+             </div>
+			<br />
+			<div class="s-row">
+				<div class="s-col-6">
+					<figure class="outline">
+						<code lang="html">
+							<nobr>
+								<span class="tg">&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-row"</span>
+								<span class="tg">></span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-table"</span>
+								<span class="tg">&gt</span>
+							</nobr>
+							<br />
+							<!--Starting table head-->
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&ltthead&gt</span>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttr&gt</span>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>Row 1 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>Row 2 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>Row 3 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>Row 4 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<!--Ending Table Head-->
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/thead&gt</span>
+							<br />
+							<!--Starting table body-->
+								<!--Starting one row-->
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&lttbody&gt</span>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttr&gt</span>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R1 Value 1 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R2 Value 1 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R3 Value 1</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R4 Value 1</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/tr&gt</span>
+							<br />
+								<!--Ending one row-->
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R1 Value 2 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R2 Value 2 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R3 Value 2</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R4 Value 2</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/tr&gt</span>
+							<br />
+							<!--Ending another row-->
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R1 Value 3 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R2 Value 3 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R3 Value 3</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R4 Value 3</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/tr&gt</span>
+							<br />
+							<!--Ending another row-->
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R1 Value 4</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R2 Value 4</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R3 Value 4</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R4 Value 4</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/tr&gt</span>
+							<br />
+							<!--Ending Table body-->
+							<!--Closing tags-->
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/tbody&gt</span>
+							<br />
+							<span class="tg">&nbsp&nbsp&lt/div&gt</span>
+							<br />
+							<span class="tg">&lt/div&gt</span>
+						</code>
+					</figure>
+				</div>
+			</div>
+			
+			<!--Starting Striped table-->
+			<br />
+            <br />
+            <hr>
+			<div class="s-row">
+				<h3>Striped Style Table</h3>
+				<p>
+					In order to create a striped table, the <strong>striped</strong>
+					attribute has to be added to the <strong>s-table</strong> class definition.
+					This makes the final resulting class <strong>s-table striped</strong>
+					as seen in the example below.
+				</p>
+             <table class="s-table striped">
+                 <thead>
+                     <tr>
+                         <td> Row 1 </td>
+                         <td> Row 2 </td>
+                         <td> Row 3 </td>
+                         <td> Row 4 </td>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td> R1 Value 1</td>
+                         <td> R2 Value 1</td>  
+                         <td> R3 Value 1</td>  
+                         <td> R4 Value 1</td>  
+                     </tr>
+                     <tr>
+                         <td> R1 Value 2</td>
+                         <td> R2 Value 2</td>  
+                         <td> R3 Value 2</td>  
+                         <td> R4 Value 2</td>   
+                     </tr>
+                     <tr>
+                         <td> R1 Value 3</td>
+                         <td> R2 Value 3</td>  
+                         <td> R3 Value 3</td>  
+                         <td> R4 Value 3</td> 
+                     </tr>
+                     <tr>
+                         <td> R1 Value 4</td>
+                         <td> R2 Value 4</td>  
+                         <td> R3 Value 4</td>  
+                         <td> R4 Value 4</td>
+                     </tr>
+                 </tbody>
+                 </table>
+             </div>
+			<br />
+			<div class="s-row">
+				<div class="s-col-6">
+					<figure class="outline">
+						<code lang="html">
+							<nobr>
+								<span class="tg">&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-row"</span>
+								<span class="tg">></span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-table striped"</span>
+								<span class="tg">&gt</span>
+							</nobr>
+							<br />
+							<!--Starting table head-->
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&ltthead&gt</span>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttr&gt</span>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>Row 1 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>Row 2 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>Row 3 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>Row 4 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<!--Ending Table Head-->
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/thead&gt</span>
+							<br />
+							<!--Starting table body-->
+								<!--Starting one row-->
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&lttbody&gt</span>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttr&gt</span>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R1 Value 1 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R2 Value 1 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R3 Value 1</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R4 Value 1</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/tr&gt</span>
+							<br />
+								<!--Ending one row-->
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R1 Value 2 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R2 Value 2 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R3 Value 2</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R4 Value 2</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/tr&gt</span>
+							<br />
+							<!--Ending another row-->
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R1 Value 3 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R2 Value 3 </span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R3 Value 3</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R4 Value 3</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/tr&gt</span>
+							<br />
+							<!--Ending another row-->
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R1 Value 4</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R2 Value 4</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R3 Value 4</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttd&gt</span>
+								<span>R4 Value 4</span>
+								<span class="tg">&lt/td&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/tr&gt</span>
+							<br />
+							<!--Ending Table body-->
+							<!--Closing tags-->
+							<span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/tbody&gt</span>
+							<br />
+							<span class="tg">&nbsp&nbsp&lt/div&gt</span>
+							<br />
+							<span class="tg">&lt/div&gt</span>
+						</code>
+					</figure>
+				</div>
+			</div>
+		
+		</div>
+           
+           <br />
+            
+        </div>
+        <div class="s-footer">
+		<div class="s-row">
+			<div class="s-col-3">
+				<p>
+					This framework was created for the senior thesis project at Allegheny College by Keegan Shudy
+				</p>
+			</div>
+		</div>
+	</div>
+        
+        
+        
+    </body>
+    </html>
