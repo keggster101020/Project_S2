@@ -949,6 +949,11 @@ Making a header element
     color: white;
 }
 
+.s-header.orange{
+    background-color: rgba(255, 87, 34, .9);
+    color: white;
+}
+
 .s-header.red{
     background-color: rgba(218, 68, 83, .9);
     color: white;
