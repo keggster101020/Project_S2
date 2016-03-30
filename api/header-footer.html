@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Basic Page Needs-->
+        <meta charset="utf-8">
+        <title>Simply Square</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,100italic,300italic,400italic,500,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="../css/s-main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    
+    <body>
+        <style>
+            .s{
+                color: indianred;
+                page-break-after: avoid;
+            }
+            
+            .tg{
+                color: cornflowerblue;
+            }
+            
+            .c{
+                color: lightsteelblue; 
+            }
+            
+            .outline{
+                border: 1px solid lightsteelblue;
+                padding: 10px 10px;
+                
+            }
+            span{
+                white-space: normal;
+            }
+        </style>
+         <!-- Navigation menu -->
+        <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+        <div class="menu">
+            <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <label for="menu-3">API</label>
+                    <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+                    <div class="menu">
+                        <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+                        <ul>
+                            <li>
+                                <a href="button.html">Button</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="card.html">Card</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="form.html">Form</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="grid.html">Grid</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="header-footer.html">Header/Footer</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="navigation.html">Navigation</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="table.html">Table</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="util.html">Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../download.html">Download</a>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <!-- Header for the page -->
+        
+        <div class="s-header red">
+             <h1> Grid and Layout </h1>   
+        </div>
+        
+        <br />
+        <br />
+        
+        <!-- Starting content -->
+        <div class="s-container">
+            <div class="s-row">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
+                    <p> 
+                        Headers and footers are a great way to open and close content
+						on the screen. 
+                    </p>
+                    <p>
+                        For this framework, the header and footer elements will exist
+						outside of the <strong>container</strong> (see <a href="grid.html">grid</a> for
+						more information about containers).
+                    </p>
+                    <p>
+                        Even though these elements will not be inside the container, 
+						they can contain all the aspects of the <a href="grid.html">grid</a>
+						system inside them.
+						
+					 	So a header can emulate its own grid environment if need be.
+                    </p>
+                    
+                    <p>
+                        Note that it while columns can be outside of rows. It is convention
+                        to have container > row > columns. Where there is one container
+                        containing multiple rows and each row can have multiple columns.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr>
+        </div>
+		<div class="s-container">
+            <div class="s-row">
+                <h4>Header</h4>
+            </div>
+		</div>
+				<div class="s-header blue">
+					<h3> Title </h3>
+					<p>This is some subtitle text</p>
+				</div>
+				<div class="s-container">
+					
+           
+            
+            <br />  
+            <div class="s-row">
+                <div class="s-col-6">
+                    <figure class="outline">
+                            <code lang="html" data-lang="html">
+                                <nobr>
+                                    <span class="tg">&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-continer"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <!--Starting a row - column relationship-->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-1"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>1 col</span>
+                                    <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-5"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>5 col</span>
+                                    <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                <br />
+                                <!--Ending relationship-->
+                                <!--Starting a row - column relationship-->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-2"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>2 col</span>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-4"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>4 col</span>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                <br />
+                                <!--Ending relationship-->
+                                <!--Starting a row - column relationship-->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-3"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>3 col</span>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-3"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>3 col</span>
+                                    <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                <br />
+                                <!--Ending relationship-->
+                                <!--Starting a row - column relationship-->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-4"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>4 col</span>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-2"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>2 col</span>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                <br />
+                                <!--Ending relationship-->
+                                <!--Starting a row - column relationship-->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-5"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>5 col</span>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-1"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>1 col</span>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                <br />
+                                <!--Ending relationship-->
+                                <!--Starting a row - column relationship-->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-6"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>6 col</span>
+                                    <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                <br/>
+                                <!--Ending relationship-->
+                                <span class="tg">&lt/div&gt</span>
+                                
+                            </code>
+                    </figure>
+                </div>
+            </div>
+            
+            <br />
+            <br />
+            <hr />
+           <div class="s-row">
+               <h4>Using Columns </h4>
+               <p> Empty columns can be used to position elements where you want on the screen
+               </p>
+               <p>
+                   For instance, having an empty 1 column followed by another column layout
+                   with your content will center content across the screen.
+               </p>
+           </div>
+           <div class="s-row">
+               <div class="s-col-1" id="col"><p>&nbsp</p></div>
+               <div class="s-col-4" id="col">
+                   <p> 
+                       This is centered content
+                   </p>
+               </div>
+           </div>
+           <div class="s-row">
+               <div class="s-col-1"></div>
+               <div class="s-col-4">
+                   <figure class="outline">
+                       <code lang="html">
+                           <nobr>
+                                    <span class="tg">&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-1"</span>
+                                    <span class="tg">&gt</span>
+                                    <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-4"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>This is centered content</span>
+                                    <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <span class="tg">&lt/div&gt</span>
+                                <br />
+                       </code>
+                   </figure>
+               </div>
+           </div>
+           
+           <br />
+            
+        </div>
+        <div class="s-footer">
+		<div class="s-row">
+			<div class="s-col-3">
+				<p>
+					This framework was created for the senior thesis project at Allegheny College by Keegan Shudy
+				</p>
+			</div>
+		</div>
+	</div>
+        
+        
+        
+    </body>
