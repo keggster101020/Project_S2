@@ -865,7 +865,7 @@ table.s-table tbody td{
 
 
 
-.striped tbody tr:nth-child(2n){
+table.striped tbody tr:nth-child(2n){
     background-color: rgba(68, 138, 255, .1);
 }
 

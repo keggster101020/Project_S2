@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Basic Page Needs-->
+        <meta charset="utf-8">
+        <title>Simply Square</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,100italic,300italic,400italic,500,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="../css/s-main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    
+    <body>
+        <style>
+            .s{
+                color: indianred;
+                page-break-after: avoid;
+            }
+            
+            .tg{
+                color: cornflowerblue;
+            }
+            
+            .c{
+                color: lightsteelblue; 
+            }
+            
+            .outline{
+                border: 1px solid lightsteelblue;
+                padding: 10px 10px;
+                
+            }
+            span{
+                white-space: normal;
+            }
+			.comment{
+				color: green;
+			}
+			div#col {
+                background-color: #EEE;
+                border-radius: 4px;
+            }
+        </style>
+         <!-- Navigation menu -->
+        <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+        <div class="menu">
+            <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <label for="menu-3">API</label>
+                    <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+                    <div class="menu">
+                        <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+                        <ul>
+                            <li>
+                                <a href="button.html">Button</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="card.html">Card</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="form.html">Form</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="grid.html">Grid</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="header-footer.html">Header/Footer</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="navigation.html">Navigation</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="table.html">Table</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="util.html">Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../download.html">Download</a>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <!-- Header for the page -->
+        
+        <div class="s-header green">
+             <h1> Other Utilities </h1>   
+        </div>
+        
+        <br />
+        <br />
+        
+        <!-- Starting content -->
+        <div class="s-container">
+            <div class="s-row">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
+                    <p> 
+                        Utilities are a set of classes that are not bound
+						to any specific element. Or classes that can be called on 
+						a variety of elements to do simplified actions.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr>
+			<!--Begin Text Layout-->
+			<div class="s-row">
+				<h3>Text Utilities</h3>
+				<p>
+					Text can be aligned to the left, center, and right by adding
+					<strong>s-text-[location]</strong> to any elements class where
+					[location] is left, center, or right.
+				</p>
+             	<div class="s-col-1 s-text-left" id="col">
+					 <p>Left align text</p>
+             	</div>
+				 <div class="s-col-1 s-text-center" id="col">
+					 <p>Center align text</p>
+				 </div>
+				 <div class="s-col-1 s-text-right" id="col">
+					 <p>Right align text</p>
+				 </div>
+			</div>
+			<br />
+			<div class="s-row">
+				<div class="s-col-4">
+					<figure class="outline">
+						<code lang="html">
+							<!--Left-->
+							<nobr>
+								<span class="tg">&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-col-1 s-text-left"</span>
+								<span class="tg">></span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&ltp&gt </span>
+								<span>Left align text</span>
+								<span class="tg">&nbsp&nbsp&lt/p&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&lt/div&gt</span>
+							<br />
+							<!--Center-->
+							<nobr>
+								<span class="tg">&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-col-1 s-text-center"</span>
+								<span class="tg">></span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&ltp&gt </span>
+								<span>Center align text</span>
+								<span class="tg">&nbsp&nbsp&lt/p&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&lt/div&gt</span>
+							<br />
+							<!--Right-->
+							<nobr>
+								<span class="tg">&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-col-1 s-text-right"</span>
+								<span class="tg">></span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&ltp&gt </span>
+								<span>Right align text</span>
+								<span class="tg">&nbsp&nbsp&lt/p&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&lt/div&gt</span>
+						</code>
+					</figure>
+				</div>
+			</div>
+			
+			<br />
+			<hr>
+			
+			<!--Begin Shadows-->
+			
+			<div class="s-row">
+				<h3>Shadows</h3>
+				<p>
+					Shadows can be drawn on elements by adding <strong>s-drop-shadow-[depth]</strong>
+					to the elements class. [depth] comes in three different sizes (1, 2, and 3).
+					In the example below, shadows are drawn on div elements.
+				</p>
+             	<div class="s-col-1 s-drop-shadow-1 s-text-center">
+					 <p>Shadow depth 1</p>
+             	</div>
+				 <div class="s-col-1 s-drop-shadow-2 s-text-center">
+					 <p>Shadow depth 2</p>
+				 </div>
+				 <div class="s-col-1 s-drop-shadow-3 s-text-center">
+					 <p>Shadow depth 3</p>
+				 </div>
+			</div>
+			<br />
+			<div class="s-row">
+				<div class="s-col-4">
+					<figure class="outline">
+						<code lang="html">
+							<!--Left-->
+							<nobr>
+								<span class="tg">&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-col-1 s-drop-shadow-1"</span>
+								<span class="tg">></span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&ltp&gt </span>
+								<span>Shadow depth 1</span>
+								<span class="tg">&nbsp&nbsp&lt/p&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&lt/div&gt</span>
+							<br />
+							<!--Center-->
+							<nobr>
+								<span class="tg">&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-col-1 s-drop-shadow-1"</span>
+								<span class="tg">></span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&ltp&gt </span>
+								<span>Shadow depth 2</span>
+								<span class="tg">&nbsp&nbsp&lt/p&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&lt/div&gt</span>
+							<br />
+							<!--Right-->
+							<nobr>
+								<span class="tg">&ltdiv </span>
+								<span class="c">class=</span>
+								<span class="s">"s-col-1 s-drop-shadow-1"</span>
+								<span class="tg">></span>
+							</nobr>
+							<br />
+							<nobr>
+								<span class="tg">&nbsp&nbsp&ltp&gt </span>
+								<span>Shadow depth 3</span>
+								<span class="tg">&nbsp&nbsp&lt/p&gt</span>
+							</nobr>
+							<br />
+							<span class="tg">&lt/div&gt</span>
+						</code>
+					</figure>
+				</div>
+			</div>
+			
+			<br />
+			<hr>
+			
+			<!--Begin tooltips-->
+			
+        	<div class="s-row">
+				<h3> Tooltips </h3>
+				<p>
+					Tooltips are pieces of helper text or information text that appear when the user
+					hovers over the element with their mouse. These are useful in guiding a user
+					to a desired action.
+				</p>
+				<p>
+					Tooltips can be added to any element that supports the <strong>data-toggle</strong>
+					and <strong>title</strong> selectors.
+					Some examples shown below are: links, paragraphs.
+				</p>
+        	</div>
+			<div class="s-row">
+				<div class="s-col-1"></div>
+				<div class="s-col-1">
+					<p>
+						<a class="tooltip" href="#" data-toggle="tooltip" title="This is a tooltip">Hover over me</a>
+					</p>
+				</div>
+				<div class="s-col-4">
+					<p>
+						<p class="tooltip" data-toggle="tooltip" title="This is another tooltip">Paragraph Text Tooltip</p>
+					</p>
+				</div>
+			</div>
+			<div class="s-row">
+				<div class="s-col-6">
+				<figure class="outline">
+						<code lang="html">
+							<!--anchor tooltip-->
+							<nobr>
+								<span class="tg">&lta </span>
+								<span class="c">class=</span>
+								<span class="s">"tooltip"</span>
+								<span class="c">href=</span>
+								<span class="s">"#"</span>
+								<span class="c">data-toggle=</span>
+								<span class="s">"tooltip"</span>
+								<span class="c">title=</span>
+								<span class="s">"This is a tooltip"</span>
+								<span class="tg">&gt</span>
+								<span>Hover over me</span>
+								<span class="tg">&lt/a&gt</span>
+							</nobr>
+							<br />
+							<br />
+							<nobr>
+								<span class="tg">&ltp </span>
+								<span class="c">class=</span>
+								<span class="s">"tooltip"</span>
+								<span class="c">data-toggle=</span>
+								<span class="s">"tooltip"</span>
+								<span class="c">title=</span>
+								<span class="s">"This is another tooltip"</span>
+								<span class="tg">&gt</span>
+								<span>Paragraph Tooltip</span>
+								<span class="tg">&lt/p&gt</span>
+							</nobr>
+							
+						</code>
+					</figure>
+				</div>
+			</div>
+							
+		</div>
+           
+           <br />
+            
+        </div>
+        <div class="s-footer">
+		<div class="s-row">
+			<div class="s-col-3">
+				<p>
+					This framework was created for the senior thesis project at Allegheny College by Keegan Shudy
+				</p>
+			</div>
+		</div>
+	</div>
+        
+        
+        
+    </body>
+    </html>
