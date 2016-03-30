@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Basic Page Needs-->
+        <meta charset="utf-8">
+        <title>Simply Square</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,100italic,300italic,400italic,500,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="../css/s-main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    
+    <body>
+        <style>
+            .s{
+                color: indianred;
+                page-break-after: avoid;
+            }
+            
+            .tg{
+                color: cornflowerblue;
+            }
+            
+            .c{
+                color: lightsteelblue; 
+            }
+            
+            .outline{
+                border: 1px solid lightsteelblue;
+                padding: 10px 10px;
+                
+            }
+            span{
+                white-space: normal;
+            }
+        </style>
+         <!-- Navigation menu -->
+        <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+        <div class="menu">
+            <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <label for="menu-3">API</label>
+                    <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+                    <div class="menu">
+                        <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+                        <ul>
+                            <li>
+                                <a href="button.html">Button</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="card.html">Card</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="form.html">Form</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="grid.html">Grid</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="header-footer.html">Header/Footer</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="navigation.html">Navigation</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="table.html">Table</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="util.html">Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../download.html">Download</a>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <!-- Header for the page -->
+        
+        <div class="s-header purple">
+             <h1> Forms </h1>   
+        </div>
+        
+        <br />
+        <br />
+        
+        <!-- Starting content -->
+        <div class="s-container">
+            <div class="s-row">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
+                    <p> Forms are a collection of elements under a single HTML tag. 
+                        Forms are primarily a way to collect data from users who visit
+                        your website.
+                    </p>
+                    <p>
+                        Note that some of these form elements utalize things from the 
+                        <a href="util.html">utilities</a> page as well as the <a href="grid">grid</a>
+                        page.
+                    </p>
+                </div>
+            </div>
+            <div class="s-row">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
+                    Form elements are as follows:
+                    <ul>
+                        <li>All input types</li>
+                        <li>Selector Box</li>
+                        <li>Message Box</li>
+                    </ul>
+                    <p> Also, all form elements support the "disabled" keyword.</p>
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr>
+            <h3> Form </h3>
+            <form>
+               <div class="s-row">
+                   <div class="s-col-3">
+                       <label for="1"> Label </label>
+                       <input type="text" class="s-full-width" id="1" placeholder="Enter Name...">
+                   </div>
+                   <div class="s-col-3">
+                       <label for="2"> Disabled </label>
+                       <input type="text" class="s-full-width" id="2" placeholder="Disabled" disabled>
+                   </div>
+               </div>
+               <div class="s-row">
+                   <div class="s-col-3">
+                       <label for="3">Selector box</label>
+                        <select class="s-full-width" id="3">
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                   </div>
+                   <div class="s-col-3">
+                        <label for="4">Selector box Disabled</label>
+                        <select class="s-full-width" id="4" disabled>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                   </div>
+               </div>
+               <div class="s-row">
+                   <div class="s-col-6">
+                       <label for="5"> Message Box </label>
+                       <textarea class="s-full-width" placeholder="Input Message..." id="5"> </textarea>
+                   </div>
+               </div>
+               <div class="s-row">
+                   <div class="s-col-4">
+                        <input type="submit" class="s-button-primary" value="Submit"/>
+                   </div>
+                   <div class="s-col-2">
+                       <input type="checkbox">Send me a copy </input>
+                   </div>
+               </div>
+           </form>
+           
+            <br />
+            <div class="s-row">
+                <div class="s-col-6">
+                    <figure class="outline">
+                            <code lang="html" data-lang="html">
+                                <nobr>
+                                    <span class="tg">&ltform&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <!-- Starting one input box -->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-3"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltlabel</span>
+                                    <span class="c">for=</span>
+                                    <span class="s">"1"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>label</span>
+                                    <span class="tg">&lt/label&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltinput</span>
+                                    <span class="c">type=</span>
+                                    <span class="s">"text"</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-full-width"</span>
+                                    <span class="c">id=</span>
+                                    <span class="s">"1"</span>
+                                    <span class="c">placeholder=</span>
+                                    <span class="s">"Enter Name..."</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <!-- End input box -->
+                                <br />
+                                 <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-3"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltlabel</span>
+                                    <span class="c">for=</span>
+                                    <span class="s">"2"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>label</span>
+                                    <span class="tg">&lt/label&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltinput</span>
+                                    <span class="c">type=</span>
+                                    <span class="s">"text"</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-full-width"</span>
+                                    <span class="c">id=</span>
+                                    <span class="s">"2"</span>
+                                    <span class="c">placeholder=</span>
+                                    <span class="s">"Disabled"</span>
+                                    <span class="c">disabled</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <!-- Selector box -->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-3"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltlabel</span>
+                                    <span class="c">for=</span>
+                                    <span class="s">"3"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>label</span>
+                                    <span class="tg">&lt/label&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltselect</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-full-width"</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <!--Option-->
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&ltoption</span>
+                                    <span class="c">value=</span>
+                                    <span class="s">"1"</span>
+                                    <span> Option 1 </span>
+                                    <span class="tg">&lt/option&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <!--End option-->
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&ltoption</span>
+                                    <span class="c">value=</span>
+                                    <span class="s">"2"</span>
+                                    <span> Option 2 </span>
+                                    <span class="tg">&lt/option&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&ltoption</span>
+                                    <span class="c">value=</span>
+                                    <span class="s">"3"</span>
+                                    <span> Option 3 </span>
+                                    <span class="tg">&lt/option&gt</span>
+                                </nobr>
+                                <br/ >
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&lt/select&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltlabel</span>
+                                    <span class="c">for=</span>
+                                    <span class="s">"3"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>label</span>
+                                    <span class="tg">&lt/label&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltselect</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-full-width"</span>
+                                    <span class="c">disabled</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+                                <!-- End Selector box -->
+                                <br/>
+                                <!--Start textarea -->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-6"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltlabel</span>
+                                    <span class="c">for=</span>
+                                    <span class="s">"5"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>label</span>
+                                    <span class="tg">&lt/label&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&lttextarea</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-full-width"</span>
+                                    <span class="c">id=</span>
+                                    <span class="s">"5"</span>
+                                    <span class="c">placeholder=</span>
+                                    <span class="s">"Input Message..."</span>
+                                    <span class="tg">&gt</span>
+                                    <span class="tg">&lt/textarea&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp &lt/div&gt</span>
+                                </nobr>
+                                <br />
+                                <!--Starting submit button and checkbox-->
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-row"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-3"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&ltinput</span>
+                                    <span class="c">type=</span>
+                                    <span class="s">"submit"</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-button-primary"</span>
+                                    <span class="c">value=</span>
+                                    <span class="s">"Submit"</span>
+                                    <span class="tg">/&gt</span>
+                                </nobr>
+                                <br />
+                                <span class="tg">&nbsp&nbsp&nbsp&lt/div&gt</span>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltdiv</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-col-3"</span>
+                                    <span class="tg">&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&ltinput</span>
+                                    <span class="c">type=</span>
+                                    <span class="s">"checkbox"</span>
+                                    <span class="tg">&gt</span>
+                                    <span> Send me a copy</span>
+                                    <span class="tg">&nbsp&nbsp&nbsp&nbsp&nbsp&lt/input&gt</span>
+                                </nobr>
+                                <br />
+                                <span class="tg">&nbsp&nbsp&nbsp&lt/div&gt</span>
+                                <br/>
+                                <span class="tg">&lt/form&gt</span>
+                            </code>
+                    </figure>
+                </div>
+            </div>
+            
+            <br />
+            <br />
+            <hr />
+            <div class="s-row">
+                <h3> Input Box Breakdown </h3>
+                <p>
+                    Inputs of all type are handled by defulat (there is no need to add a class to them)
+                    the optional class of <strong>s-full-width</strong> is added so the input box
+                    can take up the full width of the div that it is contained in.
+                <div class="s-col-1"> </div>
+                <div class="s-col-3">
+                    <label for="test">Test</label>
+                    <input type="text" id="test" class="s-full-width" placeholder="Test" />
+                </div>
+            </div>
+            <div class="s-row">
+                <div class="s-col-5">
+                    <figure class="outline">
+                        <code lang="html">
+                            <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltlabel</span>
+                                    <span class="c">for=</span>
+                                    <span class="s">"test"</span>
+                                    <span class="tg">&gt</span>
+                                    <span>label</span>
+                                    <span class="tg">&lt/label&gt</span>
+                                </nobr>
+                                <br />
+                                <nobr>
+                                    <span class="tg">&nbsp&nbsp&nbsp&ltinput</span>
+                                    <span class="c">type=</span>
+                                    <span class="s">"text"</span>
+                                    <span class="c">class=</span>
+                                    <span class="s">"s-full-width"</span>
+                                    <span class="c">id=</span>
+                                    <span class="s">"test"</span>
+                                    <span class="c">placeholder=</span>
+                                    <span class="s">"Test"</span>
+                                    <span class="tg">/&gt</span>
+                                </nobr>
+                        </code>
+                    </figure>
+                </div>
+            </div>
+            
+        </div>
+        <div class="s-footer">
+		<div class="s-row">
+			<div class="s-col-3">
+				<p>
+					This framework was created for the senior thesis project at Allegheny College by Keegan Shudy
+				</p>
+			</div>
+		</div>
+	</div>
+        
+        
+        
+    </body>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Basic Page Needs-->
+        <meta charset="utf-8">
+        <title>Simply Square</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,100italic,300italic,400italic,500,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="../css/s-main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    
+    <body>
+        <style>
+            .s{
+                color: indianred;
+                page-break-after: avoid;
+            }
+            
+            .tg{
+                color: cornflowerblue;
+            }
+            
+            .c{
+                color: lightsteelblue; 
+            }
+            
+            .outline{
+                border: 1px solid lightsteelblue;
+                padding: 10px 10px;
+                
+            }
+            span{
+                white-space: normal;
+            }
+        </style>
+        <!-- Navigation menu -->
+        <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+        <div class="menu">
+            <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <label for="menu-3">API</label>
+                    <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+                    <div class="menu">
+                        <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+                        <ul>
+                            <li>
+                                <a href="button.html">Button</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="card.html">Card</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="form.html">Form</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="grid.html">Grid</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="header-footer.html">Header/Footer</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="navigation.html">Navigation</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="table.html">Table</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="util.html">Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="../download.html">Download</a>
+                </li>
+        
+            </ul>
+        </div>
+        
+        <!-- Header for the page -->
+        
+        <div class="s-header red">
+             <h1> Cards </h1>   
+        </div>
+        
+        <br />
+        <br />
+        
+        <!-- Starting content -->
+        <div class="s-container">
+            <div class="s-row">
+                <!--<div class="s-col-1"></div>-->
+                <div class="s-col-5">
+                    <p> There are three sizes of cards: small, medium, and large each
+						with their own purpose. The large card is primaraly used as it
+						can dispaly images, support title text, subtitle text and regular
+						description text. The other two card types are displaying smaller
+						information but in an important way.
+                    </p>
+                    <p>
+                        All card types have class <strong> s-card </strong> followed by the 
+						s-card--(size) identifier. 
+					</p>
+					<strong>Any aspect of a card type (images, title,subtitle, action-bar, or text)
+						can be omitted.</strong>
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr>
+            
+            <div class="s-row">
+				<h3> Small Card </h3>
+                <p>Small cards are meant for small images with a title and a subtitle only
+                    both containing minmal text and an optional action bar </p>
+                <div class="s-col-1"></div>
+                <div class="s-col-4">
+                    <div class="s-col-4">
+                         <div class="s-card s-card--small">
+                        <img src="http://images.clipartpanda.com/car-20clip-20art-ferrari_car_red.png" class="s-card--image" />
+                        <h6 class="s-card--title" style="color:red;"> This is the card title </h6>
+                        <span class="s-card--subtitle"> Small card, small actions </span>
+                        <div class="s-card--action-bar">
+                            <button class="s-button-primary">Button</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="s-row">
+                <div class="s-col-1"></div>
+                <div class="s-col-4">
+                    <figure class="outline">
+                            <code lang="html" data-lang="html">
+                                <nobr>
+                                <span class="tg">&ltdiv</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card s-card--small"</span>
+                                <span class="tg">&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&nbsp&nbsp&ltimg</span>
+								<span class="c">src=</span>
+								<span class="s">"img url"</span>
+								<span class="c">class=</span>
+								<span class="s">"s-card--image"</span>
+                                <span class="c">/&gt</span>
+                                </nobr>
+								<br />
+                                <nobr>
+                                <span class="tg">&nbsp&nbsp&lth6</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card--title"</span>
+								<span class="c">style=</span>
+                                <span class="s">"color:red;"</span>
+								<span class="tg">&gt</span>
+								<span>Title</span>
+                                <span class="tg">&lt/h6&gt</span>
+                                </nobr>
+								<br />
+                                <nobr>
+                                <span class="tg">&nbsp&nbsp&ltspan</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card--subtitle"</span>
+                                <span class="tg">&gt</span>
+                                <span>Short Text</span>
+                                <span class="tg">&lt/span&gt</span>
+                                </nobr>
+								<br />
+                                <nobr>
+                                <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card--action-bar"</span>
+                                <span class="tg">&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltbutton</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-button-primary"</span>
+								<span class="tg">&gt</span>
+								<span> Button</span>
+                                <span class="tg">&lt/button&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&lt/div&gt</span>
+                                </nobr>
+                            </code>
+                    </figure>
+                </div>
+            </div>
+            
+            <br />
+            <br />
+            <hr />
+			
+			<div class="s-row">
+                <h3> Medium Card </h3>
+                <p>A medium card is meant to convey some short text in an important way. 
+                   This card does not support an image type!
+				<div class="s-col-1"></div>
+                <div class="s-col-4">
+                    <div class="s-card s-card--medium">
+                        <h6 class="s-card--title" style="color:blue;"> This is the card title </h6>
+                        <p class="s-card--text">
+                            This is a medium size card, use this card to display text with actions only
+                        </p>
+            
+                        <div class="s-card--action-bar">
+                            <button class="s-button-primary">Button</button>
+                        </div>
+                        </div>
+                 </div>
+            </div>
+            
+            <div class="s-row">
+                <div class="s-col-1"></div>
+                <div class="s-col-4">
+                    <figure class="outline">
+                            <code lang="html" data-lang="html">
+                                <nobr>
+                                <span class="tg">&ltdiv</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card s-card--medium"</span>
+                                <span class="tg">&gt</span>
+                                </nobr>
+								<br />
+                                <nobr>
+                                <span class="tg">&nbsp&nbsp&lth6</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card--title"</span>
+								<span class="c">style=</span>
+                                <span class="s">"color:blue;"</span>
+								<span class="tg">&gt</span>
+								<span>Text</span>
+                                <span class="tg">&lt/h6&gt</span>
+                                </nobr>
+								<br />
+                                <nobr>
+                                <span class="tg">&nbsp&nbsp&ltp</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card--text"</span>
+                                <span class="tg">&gt</span>
+                                <span>Some text</span>
+                                <span class="tg">&lt/p&gt</span>
+                                </nobr>
+								<br />
+                                <nobr>
+                                <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card--action-bar"</span>
+                                <span class="tg">&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltbutton</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-button-primary"</span>
+								<span class="tg">&gt</span>
+								<span> Button</span>
+                                <span class="tg">&lt/button&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&lt/div&gt</span>
+                                </nobr>
+                            </code>
+                    </figure>
+                </div>
+            </div>
+            
+            <br />
+            <br />
+            <hr />
+			
+			<div class="s-row">
+				<h3>Large Card</h3>
+                <p> The most versitle of the three, large cards can support images, titles, and text
+                    all in one type.
+				<div class="s-col-1"></div>
+                <div class="s-col-4">
+                     <div class="s-card s-card--large">
+                        <img src="http://images.clipartpanda.com/car-20clip-20art-ferrari_car_red.png" class="s-card--image" />
+                        <h6 class="s-card--title" style="background-color:grey;"> This is the card title </h6>
+                        <p class="s-card--text">
+                            This is a large card, use this card to display large images with captions
+                        </p>
+            
+                        <div class="s-card--action-bar">
+                            <button class="s-button-primary">Button</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+			<div class="s-row">
+                <div class="s-col-1"></div>
+                <div class="s-col-5">
+                    <figure class="outline">
+                            <code lang="html" data-lang="html">
+                               <nobr>
+                                <span class="tg">&ltdiv</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card s-card--large"</span>
+                                <span class="tg">&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&nbsp&nbsp&ltimg</span>
+								<span class="c">src=</span>
+								<span class="s">"img url"</span>
+								<span class="c">class=</span>
+								<span class="s">"s-card--image"</span>
+                                <span class="c">/&gt</span>
+                                </nobr>
+								<br />
+                                <nobr>
+                                <span class="tg">&nbsp&nbsp&lth6</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card--title"</span>
+								<span class="c">style=</span>
+                                <span class="s">"background-color:grey;"</span>
+								<span class="tg">&gt</span>
+								<span>Title</span>
+                                <span class="tg">&lt/h6&gt</span>
+                                </nobr>
+								<br />
+                                <nobr>
+                                <span class="tg">&nbsp&nbsp&ltp</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card--text"</span>
+                                <span class="tg">&gt</span>
+                                <span>Some Text</span>
+                                <span class="tg">&lt/p&gt</span>
+                                </nobr>
+								<br />
+                                <nobr>
+                                <span class="tg">&nbsp&nbsp&ltdiv</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-card--action-bar"</span>
+                                <span class="tg">&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&nbsp&nbsp&nbsp&nbsp&ltbutton</span>
+                                <span class="c">class=</span>
+                                <span class="s">"s-button-primary"</span>
+								<span class="tg">&gt</span>
+								<span> Button</span>
+                                <span class="tg">&lt/button&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&nbsp&nbsp&lt/div&gt</span>
+                                </nobr>
+								<br />
+								<nobr>
+                                <span class="tg">&lt/div&gt</span>
+                                </nobr>
+                            </code>
+                    </figure>
+                </div>
+            </div>
+			
+        </div>
+        <div class="s-footer">
+		<div class="s-row">
+			<div class="s-col-3">
+				<p>
+					This framework was created for the senior thesis project at Allegheny College by Keegan Shudy
+				</p>
+			</div>
+		</div>
+	</div>
+        
+        
+        
+    </body>

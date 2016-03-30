@@ -659,7 +659,7 @@ Starting cards
   opacity: 0;
 }
 .s-card--medium .s-card--title {
-  /*font-size: 18px;*/
+  font-size: 18px;
   top: 16px;
 }
 .s-card--medium .s-card--text {
@@ -942,6 +942,10 @@ Making a header element
 
 .s-header.blue{
     background-color: rgba(79, 193, 233, .9);
+    color: white;
+}
+.s-header.purple{
+    background-color: rgba(156, 39, 176, .9);
     color: white;
 }
 
